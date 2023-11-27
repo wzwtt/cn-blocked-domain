@@ -6,6 +6,8 @@ on:
 jobs:
   crawl:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Setup Go 1.x.y
         uses: actions/setup-go@v2
